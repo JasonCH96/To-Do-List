@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-3">Lista de Tareas</h1>
+        <form id="task-form" class="mb-3">
+            <div class="input-group">
+                <input type="text" id="task-input" class="form-control" placeholder="Añadir nueva tarea">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">Añadir tarea</button>
+                </div>
+            </div>
+            <div class="form-check mt-3">
+                <input type="checkbox" id="note-toggle" class="form-check-input">
+                <label for="note-toggle" class="form-check-label">Agregar nota</label>
+            </div>
+            <textarea id="note-input" class="form-control mt-2" placeholder="Añadir nota (opcional)" style="display: none;"></textarea>
+        </form>
+        <ul id="task-list" class="list-group"></ul>
+        <div class="controls mt-3">
+            <div class="btn-group btn-group-sm w-100" role="group">
+                <button id="mark-all" class="btn btn-success mr-1">Marcar todas como completadas</button>
+                <button id="delete-completed" class="btn btn-danger mr-1">Eliminar tareas completadas</button>
+                <button id="toggle-theme" class="btn btn-dark">Cambiar tema</button>
+            </div>
+        </div>              
+        <div class="mt-3">
+            <input type="text" id="search-input" class="form-control" placeholder="Buscar tarea">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
+
+
+
